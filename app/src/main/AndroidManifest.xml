@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.anglaisapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Vocabulary Part -->
+        <activity
+            android:name=".VocabularyMainActivity"
+            android:label="Vocabulary"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".NatureActivity"
+            android:label="@string/category_nature"
+            android:parentActivityName=".VocabularyMainActivity" />
+        <activity
+            android:name=".EmotionsActivity"
+            android:label="@string/category_emotions"
+            android:parentActivityName=".VocabularyMainActivity" />
+        <activity
+            android:name=".FamilyMembersActivity"
+            android:label="@string/category_family"
+            android:parentActivityName=".VocabularyMainActivity" />
+        <activity
+            android:name=".AnimalsActivity"
+            android:label="@string/category_animals"
+            android:parentActivityName=".VocabularyMainActivity" />
+
+        <!-- Listening Part -->
+        <activity
+            android:name=".ListeningAudioActivity"
+            android:label="Listening"
+            android:parentActivityName=".ListeningMainActivity" />
+        <activity
+            android:name=".ListeningMainActivity"
+            android:label="Listening"
+            android:parentActivityName=".MainActivity" />
+
+        <!-- Reading Part -->
+        <activity
+            android:name=".ReadingMainActivity"
+            android:label="Reading"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ReadingActivity"
+            android:label="Reading"
+            android:parentActivityName=".ReadingMainActivity"></activity>
+        <activity android:name=".InfoActivity"
+            android:label="Information"
+            android:parentActivityName=".MainActivity"></activity>
+    </application>
+
+</manifest>

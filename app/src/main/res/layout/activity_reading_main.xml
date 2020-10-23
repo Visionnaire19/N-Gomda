@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.anglaisapp.ReadingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+        <Button
+            android:text="Text 1"
+            android:id="@+id/button_one"
+            style="@style/Button_style"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <Button
+
+            android:text="Text 2"
+            android:id="@+id/button_two"
+            style="@style/Button_style"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+
+            android:text="Text 3"
+            android:id="@+id/button_three"
+            style="@style/Button_style"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <Button
+
+            android:text="Text 4"
+            android:id="@+id/button_four"
+            style="@style/Button_style"
+            android:layout_below="@id/button_one"/>
+
+        <Button
+
+            android:text="Text 5"
+            android:id="@+id/button_five"
+            style="@style/Button_style"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/button_two"/>
+
+        <Button
+
+            android:text="Text 6"
+            android:id="@+id/button_six"
+            style="@style/Button_style"
+            android:layout_below="@id/button_three"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <Button
+
+            android:text="Text 7"
+            android:id="@+id/button_seven"
+            style="@style/Button_style"
+            android:layout_below="@id/button_four"/>
+
+        <Button
+
+            android:text="Text 8"
+            android:id="@+id/button_eight"
+            style="@style/Button_style"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/button_five"/>
+
+        <Button
+            android:text="Text 9"
+            android:id="@+id/button_nine"
+            style="@style/Button_style"
+            android:layout_below="@id/button_six"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <Button
+
+            android:text="Text 10"
+            android:id="@+id/button_ten"
+            style="@style/Button_style"
+            android:layout_below="@id/button_seven"/>
+
+        <Button
+
+            android:text="Text 11"
+            android:id="@+id/button_eleven"
+            style="@style/Button_style"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/button_eight"/>
+
+        <Button
+
+            android:text="Text 12"
+            android:id="@+id/button_twelve"
+            style="@style/Button_style"
+            android:layout_below="@id/button_nine"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <Button
+
+            android:text="Text 13"
+            android:id="@+id/button_thirteen"
+            style="@style/Button_style"
+            android:layout_below="@id/button_ten"/>
+
+        <Button
+
+            android:text="Text 14"
+            android:id="@+id/button_fourteen"
+            style="@style/Button_style"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/button_eleven"/>
+
+        <Button
+
+            android:text="Text 15"
+            android:id="@+id/button_fifteen"
+            style="@style/Button_style"
+            android:layout_below="@id/button_twelve"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <Button
+
+            android:text="Text 16"
+            android:id="@+id/button_sixteen"
+            style="@style/Button_style"
+            android:layout_below="@id/button_thirteen"/>
+
+
+        <Button
+
+            android:text="Text 17"
+            android:id="@+id/button_seventeen"
+            style="@style/Button_style"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/button_fourteen"/>
+
+
+        <Button
+
+            android:text="Text 18"
+            android:id="@+id/button_eighteen"
+            style="@style/Button_style"
+            android:layout_below="@id/button_fifteen"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <Button
+
+            android:text="Text 19"
+            android:id="@+id/button_nineteen"
+            style="@style/Button_style"
+            android:layout_below="@id/button_sixteen"/>
+
+        <Button
+            android:text="Text 20"
+            android:id="@+id/button_twenty"
+            style="@style/Button_style"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/button_seventeen"/>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">N\'Gomda Anglais</string>
+
+
+    <!-- Category name for phrases [CHAR LIMIT=20] -->
+
+    <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
+    <string name="category_animals">Animals</string>
+
+    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
+    <string name="category_emotions">Emotions</string>
+
+    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
+    <string name="category_family">Family Members</string>
+
+    <string name="category_nature">Nature</string>
+
+
+    <string name="title_activity_vocabulary">VocabularyActivity</string>
+</resources>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.anglaisapp.ListeningMainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_audio1"
+            style="@style/Button_style"
+            android:text="Audio 1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <Button
+            android:id="@+id/button_audio2"
+            style="@style/Button_style"
+           android:layout_centerHorizontal="true"
+            android:text="Audio 2" />
+
+        <Button
+            android:id="@+id/button_audio3"
+            style="@style/Button_style"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="Audio 3" />
+
+        <Button
+            android:id="@+id/button_audio4"
+            style="@style/Button_style"
+            android:layout_below="@id/button_audio1"
+
+            android:text="Audio 4" />
+
+        <Button
+            android:id="@+id/button_audio5"
+            style="@style/Button_style"
+            android:layout_below="@id/button_audio2"
+            android:layout_centerHorizontal="true"
+            android:text="Audio 5" />
+
+        <Button
+            android:id="@+id/button_audio6"
+            style="@style/Button_style"
+            android:layout_below="@id/button_audio3"
+          android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="Audio 6" />
+
+        <Button
+            android:id="@+id/button_audio7"
+            style="@style/Button_style"
+            android:layout_below="@id/button_audio4"
+            android:text="Audio 7" />
+
+        <Button
+            android:id="@+id/button_audio8"
+            style="@style/Button_style"
+            android:layout_below="@id/button_audio5"
+            android:layout_centerHorizontal="true"
+            android:text="Audio 8" />
+
+        <Button
+            android:id="@+id/button_audio9"
+            style="@style/Button_style"
+            android:layout_below="@id/button_audio6"
+           android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="Audio 9" />
+
+        <Button
+            android:id="@+id/button_audio10"
+            style="@style/Button_style"
+            android:layout_below="@id/button_audio7"
+            android:text="Audio 10" />
+
+        <Button
+            android:id="@+id/button_audio11"
+            style="@style/Button_style"
+            android:layout_below="@id/button_audio8"
+         android:layout_centerHorizontal="true"
+            android:text="Audio 11" />
+
+        <Button
+            android:id="@+id/button_audio12"
+            style="@style/Button_style"
+            android:layout_below="@id/button_audio9"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="Audio 12" />
+
+        <Button
+            android:id="@+id/button_audio13"
+            style="@style/Button_style"
+            android:layout_below="@id/button_audio10"
+            android:text="Audio 13" />
+
+        <Button
+            android:id="@+id/button_audio14"
+            style="@style/Button_style"
+            android:layout_below="@id/button_audio11"
+           android:layout_centerHorizontal="true"
+            android:text="Audio 14" />
+
+        <Button
+            android:id="@+id/button_audio15"
+            style="@style/Button_style"
+            android:layout_below="@id/button_audio12"
+           android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="Audio 15" />
+
+        <Button
+            android:id="@+id/button_audio16"
+            style="@style/Button_style"
+            android:layout_below="@id/button_audio13"
+            android:text="Audio 16" />
+
+        <Button
+            android:id="@+id/button_audio17"
+            style="@style/Button_style"
+            android:layout_below="@id/button_audio14"
+         android:layout_centerHorizontal="true"
+            android:text="Audio 17" />
+
+        <Button
+            android:id="@+id/button_audio18"
+            style="@style/Button_style"
+            android:layout_below="@id/button_audio15"
+           android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="Audio 18" />
+
+        <Button
+            android:id="@+id/button_audio19"
+            style="@style/Button_style"
+            android:layout_below="@id/button_audio16"
+            android:text="Audio 19" />
+
+        <Button
+            android:id="@+id/button_audio20"
+            style="@style/Button_style"
+            android:layout_below="@id/button_audio17"
+           android:layout_centerHorizontal="true"
+            android:text="Audio 20" />
+
+
+    </RelativeLayout>
+</ScrollView>
