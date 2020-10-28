@@ -13,6 +13,8 @@ import android.widget.RadioGroup;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import java.util.Objects;
+
 
 public class ListeningAudioActivity extends ListeningMainActivity {
 
@@ -43,8 +45,28 @@ public class ListeningAudioActivity extends ListeningMainActivity {
     RadioGroup radiogroup3;
     RadioGroup radiogroup4;
     RadioGroup radiogroup5;
+    @SuppressLint("HandlerLeak")
+    private Handler handler = new Handler() {
+        @SuppressLint("SetTextI18n")
+        @Override
+        public void handleMessage(Message msg) {
+            int currentPosition = msg.what;
+            //Update positionBar
+            positionBar.setProgress(currentPosition);
 
-    /** Handles audio focus when playing a sound file */
+            //Update Labels.
+            String elapsedTime = createTimeLabel(currentPosition);
+            elapsedTimeLabel.setText(elapsedTime);
+
+            String remainingTime = createTimeLabel(Totaltime - currentPosition);
+            remaingTimeLabel.setText("- " + remainingTime);
+
+        }
+    };
+
+    /**
+     * Handles audio focus when playing a sound file
+     */
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -54,7 +76,7 @@ public class ListeningAudioActivity extends ListeningMainActivity {
 
 
         //create arrow to go back in title bar.
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         playBtn = findViewById(R.id.playBtn);
         elapsedTimeLabel = findViewById(R.id.elapsedTimeLabel);
@@ -312,25 +334,6 @@ public class ListeningAudioActivity extends ListeningMainActivity {
             }
         }).start();
     }
-
-    @SuppressLint("HandlerLeak")
-    private Handler handler = new Handler() {
-        @SuppressLint("SetTextI18n")
-        @Override
-        public void handleMessage(Message msg) {
-            int currentPosition = msg.what;
-            //Update positionBar
-            positionBar.setProgress(currentPosition);
-
-            //Update Labels.
-            String elapsedTime = createTimeLabel(currentPosition);
-            elapsedTimeLabel.setText(elapsedTime);
-
-            String remainingTime = createTimeLabel(Totaltime - currentPosition);
-            remaingTimeLabel.setText("- " + remainingTime);
-
-        }
-    };
 
     public String createTimeLabel(int time) {
         String timeLabel;

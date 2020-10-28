@@ -11,8 +11,18 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class AnimalsActivity extends AppCompatActivity {
- private MediaPlayer mMediaPlayer;
+ AudioManager.OnAudioFocusChangeListener mAudioFocusChangeListener = new AudioManager.OnAudioFocusChangeListener() {
+  @Override
+  public void onAudioFocusChange(int focusChange) {
 
+   if (focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT||
+
+           focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK){
+
+   }
+  }
+ };
+ private MediaPlayer mMediaPlayer;
  private MediaPlayer.OnCompletionListener  mCompletionListener = new MediaPlayer.OnCompletionListener(){
 
   @Override
@@ -20,7 +30,6 @@ public class AnimalsActivity extends AppCompatActivity {
    releaseMediaPlayer();
   }
  };
-
 
  @Override
  protected void onStop() {
@@ -135,16 +144,4 @@ public class AnimalsActivity extends AppCompatActivity {
    mMediaPlayer = null;
   }
  }
-
- AudioManager.OnAudioFocusChangeListener mAudioFocusChangeListener = new AudioManager.OnAudioFocusChangeListener() {
-  @Override
-  public void onAudioFocusChange(int focusChange) {
-
-   if (focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT||
-
-           focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK){
-
-   }
-  }
- };
 }

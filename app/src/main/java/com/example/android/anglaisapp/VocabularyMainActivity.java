@@ -1,17 +1,10 @@
 package com.example.android.anglaisapp;
 
-
-
+import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-
-        import android.app.Activity;
-        import android.content.Intent;
-        import android.os.Bundle;
-        import android.support.v7.app.AppCompatActivity;
-        import android.view.View;
-        import android.widget.TextView;
-
-        import org.w3c.dom.Text;
+import android.view.View;
+import android.widget.TextView;
 
 public class VocabularyMainActivity extends AppCompatActivity {
 
@@ -36,48 +29,45 @@ public class VocabularyMainActivity extends AppCompatActivity {
         });
 
         //find the View that shows family category
-        TextView family= (TextView) findViewById(R.id.family);
+        TextView family = (TextView) findViewById(R.id.family);
 
         //set a click listener on that View
-        family.setOnClickListener(new View.OnClickListener(){
+        family.setOnClickListener(new View.OnClickListener() {
             //the code in this method will be executed when the family View is clicked on.
 
             @Override
-            public void onClick(View view){
-                Intent familyIntent= new Intent(VocabularyMainActivity.this, FamilyMembersActivity.class);
+            public void onClick(View view) {
+                Intent familyIntent = new Intent(VocabularyMainActivity.this, FamilyMembersActivity.class);
                 startActivity(familyIntent);
             }
         });
 
         //find the View that shows colors category
-        TextView colors=(TextView) findViewById(R.id.animals);
+        TextView colors = (TextView) findViewById(R.id.animals);
 
         //set a click listener on that View
-        colors.setOnClickListener(new View.OnClickListener(){
+        colors.setOnClickListener(new View.OnClickListener() {
             //this code will be executed when the colors View is clicked on
 
             @Override
-            public void onClick(View view){
-                Intent colorsIntent= new Intent(VocabularyMainActivity.this, AnimalsActivity.class);
+            public void onClick(View view) {
+                Intent colorsIntent = new Intent(VocabularyMainActivity.this, AnimalsActivity.class);
                 startActivity(colorsIntent);
             }
         });
 
-        TextView nature=(TextView) findViewById(R.id.nature);
+        TextView nature = (TextView) findViewById(R.id.nature);
 
         //set a click listener on that View
-        nature.setOnClickListener(new View.OnClickListener(){
+        nature.setOnClickListener(new View.OnClickListener() {
             //this code will be executed when the colors View is clicked on
 
             @Override
-            public void onClick(View view){
-                Intent natureIntent= new Intent(VocabularyMainActivity.this, NatureActivity.class);
+            public void onClick(View view) {
+                Intent natureIntent = new Intent(VocabularyMainActivity.this, NatureActivity.class);
                 startActivity(natureIntent);
             }
         });
-
-
-
 
 
     }

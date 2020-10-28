@@ -1,79 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.anglaisapp.InfoActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="serif"
+            android:text="N'GOMDA"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Version 1.0.0"
+            android:textSize="20sp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="N'GOMDA"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"
-        android:textSize="30sp"
-       android:textColor="#000000"
-        android:textStyle="bold"
-        android:fontFamily="serif"
-        android:id="@+id/name"
-        android:layout_marginBottom="20dp"/>
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Version 1.0.0"
-        android:textSize="20sp"
-        android:layout_gravity="center_horizontal"
-        />
+        <TextView
+            android:id="@+id/copyright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="© 2018-2019 ISO Developers\n          All rights reserved"
+            android:textSize="20sp" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:src="@drawable/logo"
-        android:scaleType="fitCenter"
-        android:id="@+id/logo"
-        android:layout_gravity="center" />
+        <TextView
+            android:id="@+id/license"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="THANKS"
+            android:textColor="#000000"
+            android:textSize="20sp"
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="© 2018-2019 ISO Developers\n          All rights reserved"
-        android:textSize="20sp"
-        android:id="@+id/copyright"
-        android:layout_gravity="center_horizontal"/>
+            />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="THANKS"
-        android:layout_marginTop="30dp"
-        android:textSize="20sp"
-        android:id="@+id/license"
-        android:textColor="#000000"
-        android:layout_gravity="center_horizontal"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="British Council, EmojiOne, La Salle Badenya, Merriam Webster Dictionnary, Rendall's ESL Cyber Listening Lab."
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="British Council, EmojiOne, La Salle Badenya, Merriam Webster Dictionnary, Rendall's ESL Cyber Listening Lab."
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:textStyle="bold"
-        android:textSize="16sp"
-        />
-</LinearLayout>
-
-    </ScrollView>
+</ScrollView>
 
 

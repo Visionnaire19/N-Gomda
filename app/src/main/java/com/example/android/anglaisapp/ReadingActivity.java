@@ -1,8 +1,10 @@
 package com.example.android.anglaisapp;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
+
+import java.util.Objects;
 
 public class ReadingActivity extends AppCompatActivity {
 
@@ -12,7 +14,7 @@ public class ReadingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reading);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         pressedButtonNumber2 = getIntent().getExtras().getInt("buttonNumber2");
 

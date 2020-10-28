@@ -9,164 +9,164 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-       >
+        android:layout_height="wrap_content">
+
         <Button
-            android:text="Text 1"
             android:id="@+id/button_one"
             style="@style/Button_style"
+            android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"/>
+            android:text="Text 1" />
 
         <Button
 
-            android:text="Text 2"
             android:id="@+id/button_two"
             style="@style/Button_style"
-            android:layout_centerHorizontal="true"/>
+            android:layout_centerHorizontal="true"
+            android:text="Text 2" />
 
         <Button
 
-            android:text="Text 3"
             android:id="@+id/button_three"
             style="@style/Button_style"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"/>
+            android:text="Text 3" />
 
         <Button
 
-            android:text="Text 4"
             android:id="@+id/button_four"
             style="@style/Button_style"
-            android:layout_below="@id/button_one"/>
+            android:layout_below="@id/button_one"
+            android:text="Text 4" />
 
         <Button
 
-            android:text="Text 5"
             android:id="@+id/button_five"
             style="@style/Button_style"
+            android:layout_below="@+id/button_two"
             android:layout_centerHorizontal="true"
-            android:layout_below="@+id/button_two"/>
+            android:text="Text 5" />
 
         <Button
 
-            android:text="Text 6"
             android:id="@+id/button_six"
             style="@style/Button_style"
             android:layout_below="@id/button_three"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"/>
+            android:text="Text 6" />
 
         <Button
 
-            android:text="Text 7"
             android:id="@+id/button_seven"
             style="@style/Button_style"
-            android:layout_below="@id/button_four"/>
+            android:layout_below="@id/button_four"
+            android:text="Text 7" />
 
         <Button
 
-            android:text="Text 8"
             android:id="@+id/button_eight"
             style="@style/Button_style"
+            android:layout_below="@+id/button_five"
             android:layout_centerHorizontal="true"
-            android:layout_below="@+id/button_five"/>
+            android:text="Text 8" />
 
         <Button
-            android:text="Text 9"
             android:id="@+id/button_nine"
             style="@style/Button_style"
             android:layout_below="@id/button_six"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"/>
+            android:text="Text 9" />
 
         <Button
 
-            android:text="Text 10"
             android:id="@+id/button_ten"
             style="@style/Button_style"
-            android:layout_below="@id/button_seven"/>
+            android:layout_below="@id/button_seven"
+            android:text="Text 10" />
 
         <Button
 
-            android:text="Text 11"
             android:id="@+id/button_eleven"
             style="@style/Button_style"
+            android:layout_below="@+id/button_eight"
             android:layout_centerHorizontal="true"
-            android:layout_below="@+id/button_eight"/>
+            android:text="Text 11" />
 
         <Button
 
-            android:text="Text 12"
             android:id="@+id/button_twelve"
             style="@style/Button_style"
             android:layout_below="@id/button_nine"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"/>
+            android:text="Text 12" />
 
         <Button
 
-            android:text="Text 13"
             android:id="@+id/button_thirteen"
             style="@style/Button_style"
-            android:layout_below="@id/button_ten"/>
+            android:layout_below="@id/button_ten"
+            android:text="Text 13" />
 
         <Button
 
-            android:text="Text 14"
             android:id="@+id/button_fourteen"
             style="@style/Button_style"
+            android:layout_below="@+id/button_eleven"
             android:layout_centerHorizontal="true"
-            android:layout_below="@+id/button_eleven"/>
+            android:text="Text 14" />
 
         <Button
 
-            android:text="Text 15"
             android:id="@+id/button_fifteen"
             style="@style/Button_style"
             android:layout_below="@id/button_twelve"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"/>
+            android:text="Text 15" />
 
         <Button
 
-            android:text="Text 16"
             android:id="@+id/button_sixteen"
             style="@style/Button_style"
-            android:layout_below="@id/button_thirteen"/>
+            android:layout_below="@id/button_thirteen"
+            android:text="Text 16" />
 
 
         <Button
 
-            android:text="Text 17"
             android:id="@+id/button_seventeen"
             style="@style/Button_style"
+            android:layout_below="@+id/button_fourteen"
             android:layout_centerHorizontal="true"
-            android:layout_below="@+id/button_fourteen"/>
+            android:text="Text 17" />
 
 
         <Button
 
-            android:text="Text 18"
             android:id="@+id/button_eighteen"
             style="@style/Button_style"
             android:layout_below="@id/button_fifteen"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"/>
+            android:text="Text 18" />
 
         <Button
 
-            android:text="Text 19"
             android:id="@+id/button_nineteen"
             style="@style/Button_style"
-            android:layout_below="@id/button_sixteen"/>
+            android:layout_below="@id/button_sixteen"
+            android:text="Text 19" />
 
         <Button
-            android:text="Text 20"
             android:id="@+id/button_twenty"
             style="@style/Button_style"
+            android:layout_below="@+id/button_seventeen"
             android:layout_centerHorizontal="true"
-            android:layout_below="@+id/button_seventeen"/>
+            android:text="Text 20" />
     </RelativeLayout>
 
 </ScrollView>

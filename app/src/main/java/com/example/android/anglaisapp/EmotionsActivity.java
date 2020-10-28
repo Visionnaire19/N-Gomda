@@ -11,22 +11,32 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class EmotionsActivity extends AppCompatActivity {
-    private MediaPlayer mMediaPlayer;
+    AudioManager.OnAudioFocusChangeListener mAudioFocusChangeListener = new AudioManager.OnAudioFocusChangeListener() {
+        @Override
+        public void onAudioFocusChange(int focusChange) {
 
-    private MediaPlayer.OnCompletionListener  mCompletionListener = new MediaPlayer.OnCompletionListener(){
+            if (focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT ||
+
+                    focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK) {
+
+            }
+        }
+    };
+    private MediaPlayer mMediaPlayer;
+    private MediaPlayer.OnCompletionListener mCompletionListener = new MediaPlayer.OnCompletionListener() {
 
         @Override
         public void onCompletion(MediaPlayer mp) {
             releaseMediaPlayer();
         }
     };
+
     @Override
     protected void onStop() {
         super.onStop();
         releaseMediaPlayer();
 
     }
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,16 +99,4 @@ public class EmotionsActivity extends AppCompatActivity {
             mMediaPlayer = null;
         }
     }
-
-    AudioManager.OnAudioFocusChangeListener mAudioFocusChangeListener = new AudioManager.OnAudioFocusChangeListener() {
-        @Override
-        public void onAudioFocusChange(int focusChange) {
-
-            if (focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT||
-
-                    focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK){
-
-            }
-        }
-    };
 }

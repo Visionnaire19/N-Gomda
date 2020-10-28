@@ -1,213 +1,237 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    tools:context="com.example.android.anglaisapp.ListeningAudioActivity"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    tools:context="com.example.android.anglaisapp.ListeningAudioActivity">
 
     <LinearLayout
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:background="#ffffff"
-        android:gravity="center_horizontal">
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
 
 
         <TextView
             android:id="@+id/textview_audioname"
             style="@style/Audioname"
-            tools:text="Audio Name"
-            />
+            tools:text="Audio Name" />
 
         <SeekBar
             android:id="@+id/positionBar"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"/>
+            android:layout_marginTop="30dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <TextView
                 android:id="@+id/elapsedTimeLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0:11"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginStart="40dp"
                 android:layout_marginLeft="40dp"
-                android:layout_marginStart="40dp"/>
+                android:text="0:11" />
+
             <TextView
                 android:id="@+id/remainingTimeLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="-1:49"
+                android:layout_marginStart="240dp"
                 android:layout_marginLeft="240dp"
-                android:layout_marginStart="240dp"/>
+                android:text="-1:49" />
         </LinearLayout>
 
         <Button
             android:id="@+id/playBtn"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:background="@drawable/play"
             android:layout_marginTop="40dp"
-            android:onClick="playBtnClick"/>
+            android:background="@drawable/play"
+            android:onClick="playBtnClick" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_marginTop="40dp"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="18dp"
                 android:layout_height="18dp"
-                android:src="@drawable/sound"/>
+                android:src="@drawable/sound" />
+
             <SeekBar
                 android:id="@+id/volumeBar"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:progress="50"
-                android:max="100"/>
+                android:max="100"
+                android:progress="50" />
+
             <ImageView
                 android:layout_width="26dp"
                 android:layout_height="26dp"
-                android:src="@drawable/sound2"/>
+                android:src="@drawable/sound2" />
         </LinearLayout>
 
         <TextView
             android:id="@+id/question1"
-            tools:text="question1"
-            style="@style/Questions_style"/>
+            style="@style/Questions_style"
+            tools:text="question1" />
+
         <RadioGroup
             android:id="@+id/radiogroup1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <RadioButton
-                style="@style/Questions_choices_styles"
                 android:id="@+id/question1_choice1"
-                tools:text="choice 1"/>
-            <RadioButton
                 style="@style/Questions_choices_styles"
+                tools:text="choice 1" />
+
+            <RadioButton
                 android:id="@+id/question1_choice2"
-                tools:text="choice 2"/>
+                style="@style/Questions_choices_styles"
+                tools:text="choice 2" />
+
             <RadioButton
                 android:id="@+id/question1_choice3"
                 style="@style/Questions_choices_styles"
-                tools:text="choice 3"/>
+                tools:text="choice 3" />
         </RadioGroup>
 
         <TextView
             android:id="@+id/question2"
-            tools:text="question2"
-            style="@style/Questions_style"/>
+            style="@style/Questions_style"
+            tools:text="question2" />
+
         <RadioGroup
             android:id="@+id/radiogroup2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <RadioButton
                 android:id="@+id/question2_choice1"
                 style="@style/Questions_choices_styles"
-                tools:text="choice 1"/>
+                tools:text="choice 1" />
+
             <RadioButton
                 android:id="@+id/question2_choice2"
                 style="@style/Questions_choices_styles"
-                tools:text="choice 2"/>
+                tools:text="choice 2" />
+
             <RadioButton
                 android:id="@+id/question2_choice3"
                 style="@style/Questions_choices_styles"
-                tools:text="choice 3"/>
+                tools:text="choice 3" />
         </RadioGroup>
 
         <TextView
             android:id="@+id/question3"
-            tools:text="question3"
-            style="@style/Questions_style"/>
+            style="@style/Questions_style"
+            tools:text="question3" />
+
         <RadioGroup
             android:id="@+id/radiogroup3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <RadioButton
                 android:id="@+id/question3_choice1"
                 style="@style/Questions_choices_styles"
-                tools:text="choice 1"/>
+                tools:text="choice 1" />
+
             <RadioButton
                 android:id="@+id/question3_choice2"
                 style="@style/Questions_choices_styles"
-                tools:text="choice 2"/>
+                tools:text="choice 2" />
+
             <RadioButton
                 android:id="@+id/question3_choice3"
                 style="@style/Questions_choices_styles"
-                tools:text="choice 3"/>
+                tools:text="choice 3" />
         </RadioGroup>
+
         <TextView
             android:id="@+id/question4"
-            tools:text="question4"
-            style="@style/Questions_style"/>
+            style="@style/Questions_style"
+            tools:text="question4" />
+
         <RadioGroup
             android:id="@+id/radiogroup4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <RadioButton
                 android:id="@+id/question4_choice1"
                 style="@style/Questions_choices_styles"
-                tools:text="choice 1"/>
+                tools:text="choice 1" />
+
             <RadioButton
                 android:id="@+id/question4_choice2"
                 style="@style/Questions_choices_styles"
-                tools:text="choice 2"/>
+                tools:text="choice 2" />
+
             <RadioButton
                 android:id="@+id/question4_choice3"
                 style="@style/Questions_choices_styles"
-                tools:text="choice 3"/>
+                tools:text="choice 3" />
         </RadioGroup>
+
         <TextView
             android:id="@+id/question5"
-            tools:text="question5"
-            style="@style/Questions_style"/>
+            style="@style/Questions_style"
+            tools:text="question5" />
+
         <RadioGroup
             android:id="@+id/radiogroup5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <RadioButton
                 android:id="@+id/question5_choice1"
                 style="@style/Questions_choices_styles"
-                tools:text="choice 1"/>
+                tools:text="choice 1" />
+
             <RadioButton
                 android:id="@+id/question5_choice2"
                 style="@style/Questions_choices_styles"
-                tools:text="choice 2"/>
+                tools:text="choice 2" />
+
             <RadioButton
                 android:id="@+id/question5_choice3"
                 style="@style/Questions_choices_styles"
-                tools:text="choice 3"/>
+                tools:text="choice 3" />
         </RadioGroup>
 
         <Button
             android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/buttondesign"
+            android:onClick="Score"
             android:text="Results"
             android:textColor="#ffff"
-            android:textStyle="bold"
-            android:layout_marginTop="16dp"
             android:textSize="16sp"
-            android:background="@drawable/buttondesign"
-            android:onClick="Score"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/score_textview"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:paddingLeft="16dp"
             android:paddingStart="16dp"
+            android:paddingLeft="16dp"
             android:paddingEnd="16dp"
             android:textSize="16sp"
-            tools:text="you got 35"/>
+            tools:text="you got 35" />
 
 
     </LinearLayout>
